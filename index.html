@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!----------------------- HEADER ----------------->
+    <!-- --------------------- HEADER --------------- -->
 
     <header class="header">
       <div class="container heder-container">
@@ -50,7 +50,7 @@
         </ul>
       </div>
     </header>
-    <!--------------------------- MAIN ----------------->
+    <!-- ------------------------- MAIN --------------- -->
 
     <main>
       <!------------------------- HERO ----------------->
@@ -349,15 +349,84 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" data-modal-close class="close-button">
-            <svg width="11" height="11">
+            <svg class="modal-close-icon" width="11" height="11">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
+
+          <form class="form-modal">
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+
+            <ul>
+              <li>
+                <label class="modal-label">
+                  Имя
+                  <div class="modal-input-field">
+                    <input class="modal-input" type="text" name="name" />
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="modal-label">
+                  Телефон
+                  <div class="modal-input-field">
+                    <input class="modal-input" type="tel" name="tel" />
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <label class="modal-label"
+                  >Почта
+                  <div class="modal-input-field">
+                    <input class="modal-input" type="email" name="email" />
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <label class="modal-feedback">
+                  Комментарий
+                  <textarea
+                    class="feedback-input"
+                    name="comment"
+                    placeholder="Введите текст"
+                    rows="6"
+                  >
+                  </textarea>
+                </label>
+              </li>
+            </ul>
+
+            <div class="policy-submit">
+              <label class="modal-policy">
+                <input class="checkbox-input" type="checkbox" name="policy" />
+                <svg class="check-box check-off" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+                <svg class="check-box check-on" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+                </svg>
+
+                Соглашаюсь с рассылкой и принимаю
+                <a class="policy-check" href="#">Условия договора</a>
+              </label>
+              <button type="submit" class="button-submit">Отправить</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
 
-    <!--------------------- FOOTER --------------->
+    <!-- ------------------- FOOTER ------------- -->
 
     <footer class="background-footer footer-list">
       <div class="container footer-items">
@@ -409,6 +478,19 @@
             </ul>
           </div>
         </div>
+        <!-- -------------------------Подписка футера -->
+        <form class="subscribe-form">
+          <label class="title-subscribe">
+            Подпишитесь на рассылку
+            <input type="email" name="subscribe" class="input-subscribe" placeholder="E-mail" />
+          </label>
+          <button class="button-subscribe">
+            Подписаться
+            <svg class="svg-subscribe" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
