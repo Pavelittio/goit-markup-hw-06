@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- --------------------- HEADER --------------- -->
+    <!-- -- -- -- -- HEADER -- -- -- -- -- -->
 
     <header class="header">
       <div class="container heder-container">
@@ -354,68 +354,56 @@
             </svg>
           </button>
 
-          <form class="form-modal">
-            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+          <form>
+            <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
 
-            <ul>
-              <li>
-                <label class="modal-label">
-                  Имя
-                  <div class="modal-input-field">
-                    <input class="modal-input" type="text" name="name" />
-                    <svg class="modal-svg" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
-                    </svg>
-                  </div>
-                </label>
-              </li>
+            <div class="modal-group">
+              <label class="modal-label">
+                Имя
+                <span class="modal-input-field">
+                  <input class="modal-input" type="text" name="name" />
+                  <svg class="modal-svg" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                  </svg>
+                </span>
+              </label>
 
-              <li>
-                <label class="modal-label">
-                  Телефон
-                  <div class="modal-input-field">
-                    <input class="modal-input" type="tel" name="tel" />
-                    <svg class="modal-svg" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
-                    </svg>
-                  </div>
-                </label>
-              </li>
-              <li>
-                <label class="modal-label"
-                  >Почта
-                  <div class="modal-input-field">
-                    <input class="modal-input" type="email" name="email" />
-                    <svg class="modal-svg" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
-                    </svg>
-                  </div>
-                </label>
-              </li>
-              <li>
-                <label class="modal-feedback">
-                  Комментарий
-                  <textarea
-                    class="feedback-input"
-                    name="comment"
-                    rows="6"
-                    placeholder="Введите комментарий"
-                  >
-                  </textarea>
-                </label>
-              </li>
-            </ul>
+              <label class="modal-label">
+                Телефон
+                <span class="modal-input-field">
+                  <input class="modal-input" type="tel" name="tel" />
+                  <svg class="modal-svg" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="modal-label"
+                >Почта
+                <span class="modal-input-field">
+                  <input class="modal-input" type="email" name="email" />
+                  <svg class="modal-svg" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="modal-feedback">
+                Комментарий
+                <textarea
+                  class="feedback-input"
+                  name="comment"
+                  rows="6"
+                  placeholder="Введите комментарий"
+                ></textarea>
+              </label>
+            </div>
 
             <div class="policy-submit">
               <label class="modal-policy">
                 <input class="checkbox-input-hidden" type="checkbox" name="policy" />
-                <svg class="check-box check-on" width="16" height="15">
-                  <use href="./images/symbol-defs.svg#icon-icon-check"></use>
-                </svg>
-                <svg class="check-box check-off" width="16" height="15">
+                <svg class="check-box" width="16" height="15">
                   <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                  <use class="check-on" href="./images/symbol-defs.svg#icon-icon-check"></use>
                 </svg>
-
                 Соглашаюсь с рассылкой и принимаю
                 <a class="policy-check-link" href="#">Условия договора</a>
               </label>
@@ -430,7 +418,7 @@
 
     <footer class="background-footer footer-list">
       <div class="container footer-items">
-        <div class="footer-address">
+        <div class="footer-adress">
           <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
           <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
           <ul>
@@ -443,47 +431,45 @@
           </ul>
         </div>
 
-        <div>
-          <h3 class="footer-cta">Присоединяйтесь</h3>
-          <div>
-            <ul class="footer-sotial">
-              <li>
-                <a href="#" class="footer-sotial-box">
-                  <svg class="svg-footer-white" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-sotial-box">
-                  <svg class="svg-footer-white" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-sotial-box">
-                  <svg class="svg-footer-white" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-sotial-box">
-                  <svg class="svg-footer-white" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer-social">
+          <h2 class="footer-cta">Присоединяйтесь</h2>
+          <!-- <div> -->
+          <ul class="footer-sotial">
+            <li>
+              <a href="#" class="footer-sotial-box">
+                <svg class="svg-footer-white" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-sotial-box">
+                <svg class="svg-footer-white" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-sotial-box">
+                <svg class="svg-footer-white" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-sotial-box">
+                <svg class="svg-footer-white" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
         <!-- -------------------------Подписка футера -->
         <form class="subscribe-form">
-          <label class="title-subscribe">
-            Подпишитесь на рассылку
-            <input type="email" name="subscribe" class="input-subscribe" placeholder="E-mail" />
-          </label>
+          <h2 class="footer-cta">Подпишитесь на рассылку</h2>
+          <input type="email" name="subscribe" class="input-subscribe" placeholder="E-mail" />
           <button class="button-subscribe">
             Подписаться
             <svg class="svg-subscribe" width="24" height="24">

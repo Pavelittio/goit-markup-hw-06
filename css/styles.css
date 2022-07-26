@@ -304,6 +304,10 @@ ul {
     margin-bottom: 20px;
 }
 
+.footer-adress{
+    margin-right: 70px;
+}
+
 .adress {
     font-size: 14px;
     line-height: 1.7;
@@ -331,7 +335,11 @@ ul {
 
 .footer-items{
     display: flex;
-    gap: 70px;
+    align-items: baseline;
+}
+
+.footer-social{
+    margin-right: auto;
 }
 
 .footer-cta{
@@ -340,6 +348,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 .footer-sotial{
     display: flex;
@@ -370,10 +379,10 @@ ul {
 }
 
 .subscribe-form{
-    display: flex;
+    /* display: flex;
     width: 570px;
     height: 86px;
-    align-items: end;
+    align-items: end; */
 
 }
 .title-subscribe{
@@ -385,7 +394,7 @@ ul {
 }
 
 .button-subscribe{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     /* width: 200px;
     height: 50px; */
@@ -404,11 +413,11 @@ ul {
 .input-subscribe{
     width: 358px;
     height: 50px;
+    margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background: #2F303A;
-    margin-top: 20px;
+    background-color: #2F303A;
     padding-left: 16px;
     font-size: 16px;
     line-height: 20px;
@@ -676,10 +685,8 @@ ul {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     min-width: 528px;
-    min-height: 581px;
-    /* padding: 15px; */
+    padding: 40px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -699,19 +706,20 @@ ul {
     height: 30px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
-.form-modal{
-    padding: 40px;
-}
 .modal-title{
+    display: block;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+}
+
+.modal-group{
+    margin-bottom: 20px;
 }
 
 .modal-label{
@@ -768,7 +776,6 @@ ul {
 
 .feedback-input{
     margin-top: 4px;
-    margin-bottom: 20px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
@@ -776,15 +783,16 @@ ul {
     resize: none;
 }
 
-.policy-submit {
+/* .policy-submit {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .modal-policy{
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -813,13 +821,10 @@ ul {
     opacity: 0;
 }
 
-.checkbox-input-hidden:checked + .check-on{
+.checkbox-input-hidden:checked + .check-box .check-on{
     opacity: 1;
     z-index: 1;
 }
-
-
-
 
 
 .policy-check-link{
@@ -832,6 +837,9 @@ ul {
 }
 
 .button-submit{
+    display: block;
+    margin: 0 auto;
+
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
